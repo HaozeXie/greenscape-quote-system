@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote workspace · GreenScape</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-page">
+    <header class="workspace-header">
+        <div class="container header-inner">
+            <a class="brand" href="admin.html"><span class="brand-mark" aria-hidden="true">G</span> GreenScape <span class="workspace-tag">WORKSPACE</span></a>
+            <a class="home-link" href="index.html">View website ↗</a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="workspace-intro">
+            <p class="eyebrow">CUSTOMER REQUESTS</p>
+            <h1>A little care.<br>A clear quote.</h1>
+            <p>Review requests, set your price, and keep every customer in the loop.</p>
+        </section>
+        <div class="stats" aria-label="Quote overview">
+            <div><span>Total requests</span><strong id="total-count">—</strong></div>
+            <div><span><i class="dot pending-dot"></i> Awaiting quote</span><strong id="pending-count">—</strong></div>
+            <div><span><i class="dot completed-dot"></i> Completed</span><strong id="completed-count">—</strong></div>
+        </div>
+        <section class="requests-section" aria-labelledby="requests-title">
+            <div class="requests-heading"><div><p class="eyebrow">YOUR WORKBENCH</p><h2 id="requests-title">Quote requests</h2></div><button id="refresh" class="refresh-button" type="button">↻ Refresh</button></div>
+            <div class="toolbar">
+                <div class="filters" role="group" aria-label="Filter quote status">
+                    <button type="button" data-filter="all" aria-pressed="true">All requests</button>
+                    <button type="button" data-filter="pending" aria-pressed="false">Pending</button>
+                    <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
+                </div>
+                <label class="search-label"><span class="sr-only">Search name, email or phone</span><input id="quote-search" type="search" placeholder="Search name, email or phone…"></label>
+            </div>
+            <p id="list-message" role="status"></p>
+            <div id="quote-list"></div>
+        </section>
+        <footer class="workspace-footer">GreenScape Toronto <span>Good service starts with a clear quote.</span></footer>
+    </main>
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>

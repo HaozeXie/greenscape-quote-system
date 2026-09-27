@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GreenScape Toronto</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav>
+
+                <h2>
+                    GreenScape Toronto
+                </h2>
+
+                <button
+                    id="menu-button"
+                    type="button"
+                >
+                    Menu
+                </button>
+
+                <ul id="nav-menu">
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#why-us">
+                            Why Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#our-work">
+                            Our Work
+                        </a>
+                    </li>
+
+                    <li><a href="#lookup">Check Quote</a></li>
+                    <li>
+                        <a href="#quote">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section id="hero">
+
+            <div class="container">
+
+                <h1>
+                    Reliable Lawn & Yard Care Across Toronto
+                </h1>
+
+                <p>
+                    Professional lawn maintenance, seasonal cleanup,
+                    hedge trimming, and garden care for Toronto homeowners.
+                </p>
+
+                <a
+                    href="#quote"
+                    class="button"
+                >
+                    Get a Free Quote
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="services">
+
+            <div class="container">
+
+                <h2>
+                    Our Services
+                </h2>
+
+                <div class="service-container">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="why-us">
+
+            <div class="container">
+
+                <h2>
+                    Why Choose GreenScape?
+                </h2>
+
+                <ul>
+
+                    <li>
+                        Local Toronto Team
+                    </li>
+
+                    <li>
+                        Transparent Pricing
+                    </li>
+
+                    <li>
+                        Reliable Service
+                    </li>
+
+                    <li>
+                        Fast Response
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <section id="our-work">
+
+            <div class="container">
+
+                <h2>
+                    Our Work
+                </h2>
+
+                <div class="gallery-container">
+
+                    <img
+                        src="images/project.png"
+                        alt="Professional garden landscaping project"
+                    >
+
+                    <img
+                        src="images/project1.png"
+                        alt="Lawn and garden maintenance project"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="reviews">
+
+            <div class="container">
+
+                <h2>
+                    What Our Customers Say
+                </h2>
+
+
+                <div class="review-card">
+
+                    <p>
+                        "Great service and a very reliable team."
+                    </p>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <p>
+                        "Our yard looks amazing after their cleanup."
+                    </p>
+
+                </div>
+
+
+                <div class="review-card">
+
+                    <p>
+                        "Professional, friendly, and always on time."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="quote">
+
+            <div class="container">
+
+                <h2>
+                    Request a Free Quote
+                </h2>
+
+
+                <form novalidate>
+
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Your name"
+                    >
+
+
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="you@example.com"
+                    >
+
+
+
+                    <label for="phone">
+                        Phone
+                    </label>
+
+                    <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        placeholder="416-555-0123"
+                    >
+
+
+
+                    <label for="service">
+                        Service
+                    </label>
+
+                    <select
+                        id="service"
+                        name="service"
+                    >
+
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            Choose a service
+                        </option>
+
+                        <option value="lawn-maintenance">
+                            Lawn Maintenance
+                        </option>
+
+                        <option value="hedge-trimming">
+                            Hedge Trimming
+                        </option>
+
+                        <option value="seasonal-cleanup">
+                            Seasonal Cleanup
+                        </option>
+
+                        <option value="garden-care">
+                            Garden Care
+                        </option>
+
+                    </select>
+
+
+
+                    <label for="postal">
+                        Postal Code
+                    </label>
+
+                    <input
+                        id="postal"
+                        name="postal"
+                        type="text"
+                        placeholder="M5V 2T6"
+                    >
+
+
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us more about your project"
+                    ></textarea>
+
+
+
+                    <button type="submit">
+                        Request Quote
+                    </button>
+
+
+                    <p id="form-message"></p>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    <section id="lookup" class="container">
+            <h2>Check Your Quote</h2>
+            <p>Enter the phone number used in your request to see your quote status and price.</p>
+            <form id="lookup-form">
+                <label for="lookup-phone">Phone number</label>
+                <input id="lookup-phone" type="tel" autocomplete="tel" required placeholder="Your phone number">
+                <button type="submit" class="button">Find my quotes</button>
+            </form>
+            <p id="lookup-message" role="status"></p>
+            <div id="lookup-results" aria-live="polite"></div>
+        </section>
+    </main>
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <h2>
+                GreenScape Toronto
+            </h2>
+
+            <p>
+                Serving Toronto and surrounding areas.
+            </p>
+
+            <p>
+                Phone: (416) 555-0123
+            </p>
+
+            <p>
+                Email: hello@greenscapetoronto.example
+            </p>
+
+            <p>
+                © 2026 GreenScape Toronto
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
